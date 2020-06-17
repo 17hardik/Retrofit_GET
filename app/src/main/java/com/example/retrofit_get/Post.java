@@ -1,27 +1,24 @@
 package com.example.retrofit_get;
 
+import com.google.gson.JsonElement;
 import com.google.gson.annotations.SerializedName;
 
 public class Post {
-    private int userId;
-    private int id;
-    private String title;
-    @SerializedName("body")
-    private String text;
+     private JsonElement userID;
+     private JsonElement jobID;
+     private JsonElement rating;
 
-    public int getUserId() {
-        return userId;
+    @SerializedName("userID")
+
+    public JsonElement getuserId() {
+        return userID;
     }
 
-    public int getId() {
-        return id;
+    public JsonElement getjobId() {
+        return jobID;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getText() {
-        return text;
+    public JsonElement getRating() {
+        return rating;
     }
 }
